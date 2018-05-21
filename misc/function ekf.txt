@@ -1,0 +1,5 @@
+\\function \ ExtendedKalmanFilter \\
+. \ \ \ \ \ u_t=ComputeControl(\mu_{t-1},\Sigma_{t-1})\\
+. \ \ \ \ \ \bar{\mu_t},\bar{\Sigma}_t=PREDICT(\mu_{t-1},\Sigma_{t-1},u_t,\Delta_t) \\
+. \ \ \ \ \ z_t=ReadSensor() \\
+. \ \ \ \ \ \mu_{t},\Sigma_{t}=UPDATE(\bar{\mu_t},\bar{\Sigma}_t,z_t)

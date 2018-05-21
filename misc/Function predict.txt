@@ -1,0 +1,5 @@
+\\function \ PREDICT(\mu_{t-1},\Sigma_{t-1},u_t,\Delta_t) \\
+. \ \ \ \ \ \bar{\mu_t}=g(u_t,\mu_{t-1}) \\
+. \ \ \ \ \ G_t=g^{'}(u_t, x_t,\Delta_t) \\
+. \ \ \ \ \ \bar{\Sigma}_t=G_t\Sigma_{t-1}G_{t}^{T}+Q_t \\
+. \ \ \ \ \ return \ \bar{\mu_t}, \bar{\Sigma}_t

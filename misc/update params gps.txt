@@ -1,0 +1,29 @@
+\\ GPS\ Measurement:\ z_t = \begin{bmatrix}
+x \\ 
+y \\ 
+z \\ 
+\dot{x} \\ 
+\dot{y} \\ 
+\dot{z}
+\end{bmatrix} \\ 
+\\
+
+Measurement\ Model:\ h(x_t) = zFromX=\begin{bmatrix}
+x_{t,x} \\ 
+x_{t,y} \\ 
+x_{t,x} \\ 
+x_{t,\dot{x}} \\ 
+x_{t, \dot{y}}\\ 
+x_{t, \dot{z}}
+\end{bmatrix} \\
+\\
+\\
+
+Partial\ Derivative:\ h^{'}(x_t) = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\ 
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\ 
+0 & 0 & 0 & 0 & 0 & 1 & 0
+\end{bmatrix}

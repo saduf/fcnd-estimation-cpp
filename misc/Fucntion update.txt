@@ -1,0 +1,6 @@
+\\function \ UPDATE(\bar{\mu_t},\bar{\Sigma}_t,z_t) \\
+. \ \ \ \ \ H_t=h^{'}(\bar{\mu_t})\\
+. \ \ \ \ \ K_t=\bar{\Sigma}_tH_{t}^{T}(H_t\bar{\Sigma}_tH_{t}^{T}+R_t)^{-1} \\
+. \ \ \ \ \ \mu_t=\bar{\mu_t}+K_t(z_t-h(\bar{\mu_t})) \\
+. \ \ \ \ \ \Sigma_t=(I-K_tH_t)\bar{\Sigma}_t \\
+. \ \ \ \ \ return \ \mu_t, \Sigma_t

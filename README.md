@@ -74,7 +74,7 @@ Refer to lines 99-108 in QuadEstimatorEKF.cpp
 ### 3. Implement all of the elements of the prediction step for the estimator.
 The prediction step should include the state update element (PredictState() function), a correct calculation of the Rgb prime matrix, and a proper update of the state covariance. The acceleration should be accounted for as a command in the calculation of gPrime. The covariance update should follow the classic EKF update equation.
 
-From [1] Algoritm 2, the predition function has the following form:
+From [1] Algorithm 2, the prediction function has the following form:
 
 <p align="center"><img src ="./misc/function_predict.gif" /></p>
 
@@ -97,7 +97,7 @@ Finally we can update the state covariance as follows:
 Where Qt is the transition model covariance.
 
 #### :heavy_plus_sign::heavy_plus_sign: UpdateFromIMU() function implementation.
-Refer to lines 175-180 in QuadEstimatorEKF.cpp for the PredictState() function implementation. \
+Refer to lines 172-180 in QuadEstimatorEKF.cpp for the PredictState() function implementation. \
 Refer to lines 208-213 in QuadEstimatorEKF.cpp for the GetRbgPrime() function implementation. \
 Refer to lines 262-273 in QuadEstimatorEKF.cpp for the Predict() function implementation. 
 
@@ -110,7 +110,7 @@ Implementing the magnetometer update requires to pass the proper parameters to t
 
 Where the parameters passed to the EKF's Update function are:
 
-<p align="center"><img src ="./misc/update_params.gif" /></p>
+<p align="center"><img src ="./misc/update_params2.gif" /></p>
 
 Normalize the difference between your measured and estimated yaw, we don't want to update your yaw the long way around the circle:
 

@@ -1,6 +1,5 @@
 ## Project: Estimation
-![GPS Update](./misc/GPSUpdate.gif)
-
+<p align="center"><img src ="./misc/GPSUpdate.gif" /></p>
 ---
 
 
@@ -133,8 +132,7 @@ Refer to lines 299-312 in QuadEstimatorEKF.cpp
 ### Execute the flight
 #### 1. Does it work?
 It works!
-
-![Monte Carlo Test](./misc/MonteCarloTest.gif)
+<p align="center"><img src ="./misc/MonteCarloTest.gif" /></p>
 
 ### References
 [1] [Estimation for Quadrotors](https://www.overleaf.com/read/vymfngphcccj#/54894644/) leaf document \
